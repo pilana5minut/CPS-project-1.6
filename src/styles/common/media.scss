@@ -28,7 +28,7 @@
 
 // Extra large  xl  ≥1200px
 @mixin media-min-width-XL() {
-  @media (min-width: 1200px) {
+  @media (min-width: 1366px) {
     @content;
   }
 }

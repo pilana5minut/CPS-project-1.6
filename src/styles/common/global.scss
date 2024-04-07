@@ -14,10 +14,10 @@ body {
   height: 100%;
   min-width: 320px;
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
-  color: var(--color-text);
-  background-color: #a1d2f1;
+  color: var(--color-text-secondary);
+  background-color: var(--color-section-background);
   // background-image: url("./assets/svg/cell-body.svg");
 }
 
@@ -59,16 +59,24 @@ button {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1464px;
   margin: 0 auto;
-  padding: 0 15px;
-}
+  padding: 0 16px;
 
-@include media-min-width-SM() {
-  head {
-    cursor: pointer;
+  @include media-min-width-MD {
+    padding: 0 24px;
+  }
+
+  @include media-min-width-XL {
+    padding: 0 32px;
   }
 }
+
+// @include media-min-width-SM() {
+//   head {
+//     cursor: pointer;
+//   }
+// }
 
 @include media-min-width-MD() {
   head {
@@ -76,11 +84,11 @@ button {
   }
 }
 
-@include media-min-width-LG() {
-  head {
-    cursor: pointer;
-  }
-}
+// @include media-min-width-LG() {
+//   head {
+//     cursor: pointer;
+//   }
+// }
 
 @include media-min-width-XL() {
   head {
@@ -88,8 +96,8 @@ button {
   }
 }
 
-@include media-min-width-XXL() {
-  head {
-    cursor: pointer;
-  }
-}
+// @include media-min-width-XXL() {
+//   head {
+//     cursor: pointer;
+//   }
+// }
