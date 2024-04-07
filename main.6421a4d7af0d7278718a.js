@@ -1,0 +1,2 @@
+(()=>{"use strict";console.log("🚥  calc.sum(3, 2)  🚥",5),console.log("🚥  calc.subt(3, 2)  🚥",1),console.log("🚥  calc.mult(3, 2)  🚥",6),console.log("🚥  calc.dev(3, 2)  🚥",1.5)})();
+//# sourceMappingURL=main.6421a4d7af0d7278718a.js.map
