@@ -1,0 +1,28 @@
+.header {
+  &__inner {
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gold;
+  }
+
+  &__left-section {}
+
+  &__center-section {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact-list {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__right-section {
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+}

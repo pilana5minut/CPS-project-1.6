@@ -1,0 +1,24 @@
+.circular-button {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  transition: outline-offset 900ms, transform 900ms;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-secondary);
+    outline-offset: 2px;
+    border-radius: 100px;
+    transform: scale(80%);
+    transition: outline-offset 200ms, transform 200ms;
+  }
+
+  @include media-hover {
+    outline: 2px solid var(--color-accent-secondary);
+    outline-offset: 2px;
+    border-radius: 100px;
+    transform: scale(80%);
+    transition: outline-offset 200ms, transform 200ms;
+  }
+
+}

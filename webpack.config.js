@@ -57,7 +57,8 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          // isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
@@ -68,6 +69,20 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sourceMap: true,
+            },
+          },
+          {
+            loader: "sass-resources-loader",
+            options: {
+              sourceMap: true,
+              resources: [
+                // path.resolve(__dirname, "./src/styles/common/fonts.scss"),
+                // path.resolve(__dirname, "./src/styles/common/normalize.scss"),
+                path.resolve(__dirname, "./src/styles/common/variables.scss"),
+                path.resolve(__dirname, "./src/styles/common/mixins.scss"),
+                path.resolve(__dirname, "./src/styles/common/media.scss"),
+                // path.resolve(__dirname, "./src/styles/common/global.scss"),
+              ],
             },
           },
         ],
