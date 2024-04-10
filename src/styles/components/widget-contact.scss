@@ -1,0 +1,15 @@
+.widget-contact {
+  display: none;
+  column-gap: 16px;
+  font-size: 0;
+
+  @include media-min-width-SM {
+    display: flex;
+  }
+
+  @include media-min-width-XL {
+    display: none;
+  }
+
+  &__item {}
+}

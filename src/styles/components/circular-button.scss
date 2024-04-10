@@ -1,0 +1,68 @@
+.circular-button {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-size: 16px;
+  cursor: pointer;
+  transition: outline-offset 600ms, transform 600ms;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-secondary);
+    outline-offset: 2px;
+    border-radius: 999px;
+    transition: outline-offset 200ms;
+  }
+
+  @include media-hover {
+    transform: scale(105%);
+    transition: transform 200ms;
+  }
+
+  &:active {
+    transform: scale(95%);
+    transition: transform 50ms;
+  }
+
+  &--extend {
+    font-size: 0;
+
+    @include media-min-width-XL {
+      width: auto;
+      padding-right: 50px;
+      display: flex;
+      align-items: center;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: var(--color-text-primary);
+    }
+  }
+
+  &--burger {
+    background-image: url('./assets/svg/icon-button-burger.svg');
+  }
+
+  &--call {
+    background-image: url('./assets/svg/icon-call.svg');
+  }
+
+  &--chat {
+    background-image: url('./assets/svg/icon-chat.svg');
+  }
+
+  &--profile {
+    background-image: url('./assets/svg/icon-profile.svg');
+  }
+
+  &--request {
+    background-image: url('./assets/svg/icon-request.svg');
+  }
+
+  &--status {
+    background-image: url('./assets/svg/icon-check-status.svg');
+  }
+}

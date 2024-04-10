@@ -23,12 +23,14 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     open: true,
-    port: 9999,
+    port: 3000,
     hot: true,
   },
 
   // Генерирует карты исходного кода
-  devtool: isDev ? 'eval-source-map' : 'source-map',
+  // devtool: isDev ? 'eval-source-map' : 'source-map',
+  // devtool: 'eval-source-map',
+  devtool: 'source-map',
 
   // Плагины
   plugins: [
@@ -57,17 +59,21 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          // isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
+          { loader: "css-loader", options: { sourceMap: true, }, },
+          { loader: "sass-loader", options: { sourceMap: true, }, },
           {
-            loader: "css-loader",
+            loader: "sass-resources-loader",
             options: {
               sourceMap: true,
-            },
-          },
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true,
+              resources: [
+                // path.resolve(__dirname, "./src/styles/common/normalize.scss"),
+                path.resolve(__dirname, "./src/styles/common/variables.scss"),
+                path.resolve(__dirname, "./src/styles/common/mixins.scss"),
+                path.resolve(__dirname, "./src/styles/common/media.scss"),
+                // path.resolve(__dirname, "./src/styles/common/global.scss"),
+              ],
             },
           },
         ],
