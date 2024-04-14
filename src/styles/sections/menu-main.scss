@@ -6,7 +6,6 @@
   top: 0px;
   bottom: 0px;
   left: -320px;
-  // background-color: rgb(221, 160, 221);
   background-color: var(--color-white);
   box-shadow: none;
   transition: transform 300ms cubic-bezier(.17, .67, 0, 1.57);
@@ -22,7 +21,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    // background-color: rgb(30, 144, 255, 0.2)
   }
 
   //////// header ////////////////////////////////////////
@@ -75,9 +73,9 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
-    -webkit-tap-highlight-color: transparent;
     color: var(--color-text-primary);
     transition: width 900ms;
+    -webkit-tap-highlight-color: transparent;
 
     &::after {
       content: "";
@@ -135,8 +133,6 @@
   &__footer {
     margin-top: auto;
   }
-
-  //////// communication ////////////////////////////////////////
 
   &__widget-contact {
     margin-bottom: 17px;

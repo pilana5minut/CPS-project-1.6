@@ -1,7 +1,6 @@
 .header {
   border-bottom: 1px solid var(--color-accent-secondary-thin);
-  // background-color: var(--color-white);
-  background-color: rgb(255, 217, 0);
+  background-color: var(--color-white);
 
   @include media-min-width-LG {
     position: absolute;
@@ -9,7 +8,6 @@
     left: 0px;
     background-color: transparent;
     border: none;
-    background-color: rgb(255, 217, 0);
   }
 
   &__inner {
@@ -95,10 +93,6 @@
 
     @include media-min-width-SM {
       display: flex;
-    }
-
-    @include media-min-width-XL {
-      // display: none;
     }
   }
 }

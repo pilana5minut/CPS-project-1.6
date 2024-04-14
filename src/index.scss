@@ -1,15 +1,20 @@
 @import "styles/common/fonts.scss";
-// @import "styles/common/normalize.scss";
-// @import "styles/common/variables.scss";
-// @import "styles/common/mixins.scss";
-// @import "styles/common/media.scss";
+@import "styles/common/normalize.scss";
+@import "styles/common/variables.scss";
+@import "styles/common/mixins.scss";
+@import "styles/common/media.scss";
 @import "styles/common/global.scss";
 
-// components
+// components /////////////////////////////////////////////////////////////////
 @import "styles/components/circular-button.scss";
 @import "styles/components/logo-company.scss";
 @import "styles/components/widget-contact.scss";
 @import "styles/components/lang-switcher.scss";
 @import "styles/components/widget-communication.scss";
 
-///////////////////////////////////////////////////////////////////////////////
+// sections ///////////////////////////////////////////////////////////////////
+@import "styles/sections/header.scss";
+@import "styles/sections/menu-main.scss";
+@import "styles/sections/hero.scss";
+@import "styles/sections/page.scss";
+@import "styles/sections/main.scss";
