@@ -23,13 +23,12 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     open: true,
-    port: 3000,
+    port: 9999,
     hot: true,
   },
 
   // Генерирует карты исходного кода
   // devtool: isDev ? 'eval-source-map' : 'source-map',
-  // devtool: 'eval-source-map',
   devtool: 'source-map',
 
   // Плагины
@@ -63,19 +62,6 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           { loader: "css-loader", options: { sourceMap: true, }, },
           { loader: "sass-loader", options: { sourceMap: true, }, },
-          {
-            loader: "sass-resources-loader",
-            options: {
-              sourceMap: true,
-              resources: [
-                // path.resolve(__dirname, "./src/styles/common/normalize.scss"),
-                path.resolve(__dirname, "./src/styles/common/variables.scss"),
-                path.resolve(__dirname, "./src/styles/common/mixins.scss"),
-                path.resolve(__dirname, "./src/styles/common/media.scss"),
-                // path.resolve(__dirname, "./src/styles/common/global.scss"),
-              ],
-            },
-          },
         ],
       },
 

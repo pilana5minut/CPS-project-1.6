@@ -1,0 +1,26 @@
+.page {
+  max-width: 1426px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    backdrop-filter: grayscale(100%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.9;
+      background-color: var(--color-white);
+    }
+
+    &--visible {
+      display: block;
+    }
+  }
+}
