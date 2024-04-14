@@ -7,7 +7,8 @@
 
 html {
   height: 100%;
-  background-image: url("./assets/svg/cell-96-160.svg");
+  background-color: var(--color-section-background);
+  // background-image: url("./assets/svg/cell-96-160.svg");
 }
 
 body {
@@ -59,7 +60,7 @@ button {
 }
 
 .container {
-  max-width: 1464px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 16px;
 
@@ -72,32 +73,34 @@ button {
   }
 }
 
-// @include media-min-width-SM() {
-//   head {
-//     cursor: pointer;
-//   }
-// }
+.page {
+  max-width: 1426px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
 
-@include media-min-width-MD() {
-  head {
-    cursor: pointer;
+  &__overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    backdrop-filter: grayscale(100%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.9;
+      background-color: var(--color-white);
+    }
+
+    &--visible {
+      display: block;
+    }
   }
 }
 
-// @include media-min-width-LG() {
-//   head {
-//     cursor: pointer;
-//   }
-// }
-
-@include media-min-width-XL() {
-  head {
-    cursor: pointer;
-  }
+.main {
+  position: relative;
+  flex-grow: 1;
 }
-
-// @include media-min-width-XXL() {
-//   head {
-//     cursor: pointer;
-//   }
-// }

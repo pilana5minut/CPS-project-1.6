@@ -1,12 +1,15 @@
 .header {
-  background-color: var(--color-white);
   border-bottom: 1px solid var(--color-accent-secondary-thin);
+  // background-color: var(--color-white);
+  background-color: rgb(255, 217, 0);
 
-  @include media-min-width-XL {
-    width: 100%;
+  @include media-min-width-LG {
     position: absolute;
+    right: 0px;
+    left: 0px;
     background-color: transparent;
     border: none;
+    background-color: rgb(255, 217, 0);
   }
 
   &__inner {
@@ -27,7 +30,7 @@
       padding: 0 20px 0 0;
     }
 
-    @include media-min-width-XL {
+    @include media-min-width-LG {
       display: none;
     }
   }
@@ -46,7 +49,7 @@
       padding: 0 22px;
     }
 
-    @include media-min-width-XL {
+    @include media-min-width-LG {
       display: none;
     }
 
@@ -57,8 +60,7 @@
       height: 32px;
       position: absolute;
       border-radius: 2px;
-      // background-color: dodgerblue;
-      background-color: #eaeaea;
+      background-color: var(--color-card-border);
     }
 
     &::before {
@@ -73,7 +75,6 @@
     &::after {
       right: -1px;
     }
-
   }
 
   &__section--right {
@@ -81,7 +82,7 @@
     column-gap: 16px;
     font-size: 0;
 
-    @include media-min-width-XL {
+    @include media-min-width-LG {
       margin-left: auto;
       column-gap: 31px;
       align-items: end;
@@ -89,4 +90,15 @@
     }
   }
 
+  &__widget-contact {
+    display: none;
+
+    @include media-min-width-SM {
+      display: flex;
+    }
+
+    @include media-min-width-XL {
+      // display: none;
+    }
+  }
 }

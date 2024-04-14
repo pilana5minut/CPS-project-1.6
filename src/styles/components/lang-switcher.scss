@@ -1,0 +1,22 @@
+.lang-switcher {
+  padding-left: 24px;
+  display: flex;
+  column-gap: 6px;
+
+  &__radio-button {
+    &:checked+.lang-switcher__label {
+      color: var(--color-text-secondary);
+    }
+  }
+
+  &__label {
+    display: block;
+    line-height: 150%;
+    color: var(--color-text-primary);
+    transition: color 200ms;
+
+    &:hover {
+      color: var(--color-accent-secondary);
+    }
+  }
+}

@@ -2,11 +2,12 @@
   width: 40px;
   height: 40px;
   display: inline-block;
+  font-size: 16px;
   background-repeat: no-repeat;
   background-position: center right;
-  font-size: 16px;
   cursor: pointer;
   transition: outline-offset 600ms, transform 600ms;
+  -webkit-tap-highlight-color: transparent;
 
   &:focus-visible {
     outline: 2px solid var(--color-accent-secondary);
@@ -28,7 +29,7 @@
   &--extend {
     font-size: 0;
 
-    @include media-min-width-XL {
+    @include media-min-width-LG {
       width: auto;
       padding-right: 50px;
       display: flex;
@@ -64,5 +65,13 @@
 
   &--status {
     background-image: url('./assets/svg/icon-check-status.svg');
+  }
+
+  &--close {
+    background-image: url('./assets/svg/icon-close.svg');
+  }
+
+  &--search {
+    background-image: url('./assets/svg/icon-search.svg');
   }
 }

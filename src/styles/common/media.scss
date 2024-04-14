@@ -1,9 +1,9 @@
-// Extra small  none  <576px
-@mixin media-max-width-XS() {
-  @media (max-width: 576px) {
-    @content;
-  }
-}
+// // Extra small  none  <576px
+// @mixin media-max-width-XS() {
+//   @media (max-width: 576px) {
+//     @content;
+//   }
+// }
 
 // Small  sm  ≥576px
 @mixin media-min-width-SM() {
@@ -21,7 +21,7 @@
 
 // Large  lg  ≥992px
 @mixin media-min-width-LG() {
-  @media (min-width: 992px) {
+  @media (min-width: 1120px) {
     @content;
   }
 }
@@ -33,12 +33,12 @@
   }
 }
 
-// Extra extra large  xxl  ≥1400px
-@mixin media-min-width-XXL() {
-  @media (min-width: 1440px) {
-    @content;
-  }
-}
+// // Extra extra large  xxl  ≥1400px
+// @mixin media-min-width-XXL() {
+//   @media (min-width: 1440px) {
+//     @content;
+//   }
+// }
 
 @mixin media-hover() {
   @media(hover: hover) {
