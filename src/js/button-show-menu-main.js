@@ -1,5 +1,4 @@
 import breakPoints from './break-points.js'
-console.log("🚥  breakPoints  🚥", breakPoints)
 
 const menuMain = document.querySelector('.menu-main')
 const pageOverlay = document.querySelector('.page__overlay')

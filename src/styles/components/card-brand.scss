@@ -1,0 +1,28 @@
+.card-brand {
+  height: 72px;
+  padding: 6px 6px 6px 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  background-image: url("./assets/svg/icon-arrow-card.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  position: relative;
+
+  &__link {
+    position: absolute;
+    inset: 0;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-secondary);
+      outline-offset: -2px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.card-brand.swiper-slide {
+  display: flex;
+}
