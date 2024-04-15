@@ -17,7 +17,7 @@ body {
   margin: 0;
   font-family: var(--font-family);
   font-weight: 500;
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   background-color: var(--color-section-background);
   // background-image: url("./assets/svg/cell-body.svg");
 }
@@ -29,6 +29,7 @@ a {
 }
 
 img {
+  height: auto;
   max-width: 100%;
   object-fit: cover;
 }
