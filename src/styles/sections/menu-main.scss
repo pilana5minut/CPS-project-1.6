@@ -1,5 +1,5 @@
 .menu-main {
-  width: 320px;
+  min-width: 320px;
   padding: 18px 24px 18px 0px;
   position: absolute;
   z-index: 20;
@@ -11,7 +11,7 @@
   transition: transform 300ms cubic-bezier(.17, .67, 0, 1.57);
 
   @include media-min-width-LG {
-    width: 306px;
+    min-width: 306px;
     padding: 30px 24px 25px 0px;
     box-shadow: none;
     position: static;
