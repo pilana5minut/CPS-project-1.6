@@ -81,6 +81,13 @@
     letter-spacing: -0.01em;
     color: var(--color-text-secondary);
     white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-secondary);
+      outline-offset: -2px;
+      border-radius: 6px;
+    }
 
     @include media-min-width-LG {
       padding: 7px 24px;
@@ -135,6 +142,7 @@
 
   &__show-more-button {
     padding-left: 32px;
+    padding-right: 16px;
     margin-bottom: 16px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -145,6 +153,13 @@
     background-image: url("./assets/svg/icon-arrow-down.svg");
     background-repeat: no-repeat;
     background-position: left 8px center;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-secondary);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
 
     @include media-min-width-MD {
       margin-bottom: 0;
