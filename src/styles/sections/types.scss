@@ -1,4 +1,4 @@
-.brands {
+.types {
   &__section-header {
     margin-bottom: 15px;
 
@@ -8,7 +8,7 @@
   }
 
   &__slider {
-    height: 72px;
+    height: 162px;
     margin-bottom: 16px;
     transition: height 500ms;
 
@@ -33,7 +33,7 @@
     }
   }
 
-  .brands__slider-pagination.swiper-pagination {
+  .types__slider-pagination.swiper-pagination {
     top: 182px;
     position: static;
 
@@ -49,7 +49,7 @@
     }
   }
 
-  .brands__show-all-button {
+  .types__show-all-button {
     display: none;
     margin-bottom: 50px;
     -webkit-tap-highlight-color: transparent;

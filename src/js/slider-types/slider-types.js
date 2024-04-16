@@ -3,12 +3,12 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import breakPoints from '../break-points.js'
-import sliderClassToggle from './slider-brands-class-toggle.js'
-import sliderHideSlides from './slider-brands-hide-slides.js'
+import sliderClassToggle from './slider-types-class-toggle.js'
+import sliderHideSlides from './slider-types-hide-slides.js'
 
 ///////////////////////////////////////////////////////////////////////////////
 
-const classNameWrapper = '.brands__slider'
+const classNameWrapper = '.types__slider'
 let currentInstance
 export const slideCount = 9 // Количество слайдов в мобильной версии (не может быть менее 3)
 
@@ -19,7 +19,7 @@ const optionSlider = {
   slidesPerView: 1.187,
   spaceBetween: 16,
   pagination: {
-    el: '.brands__slider-pagination',
+    el: '.types__slider-pagination',
   },
 }
 
