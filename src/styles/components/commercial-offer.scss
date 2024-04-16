@@ -1,0 +1,30 @@
+.commercial-offer {
+  max-width: 420px;
+  letter-spacing: 0.01em;
+
+  &__text {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+  }
+
+  &__link {
+    padding-right: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    background-image: url("./assets/svg/icon-arrow-offer-button.svg");
+    background-repeat: no-repeat;
+    background-position: center right 8px;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-secondary);
+      outline-offset: 2px;
+      border-radius: 2px;
+      transition: outline-offset 200ms;
+    }
+  }
+}

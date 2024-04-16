@@ -1,0 +1,203 @@
+.card-price {
+  padding: 16px;
+  padding-top: 34px;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  position: relative;
+  background-color: var(--color-white);
+
+  @include media-min-width-SM {
+    height: 65px;
+    padding: 0 24px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        width: calc(100% - 48px);
+        height: 1px;
+        position: absolute;
+        bottom: 0px;
+        background-color: var(--color-card-border);
+      }
+    }
+
+    &:first-child {
+      border-radius: 6px 6px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 6px 6px;
+    }
+  }
+
+  &.swiper-slide {
+    height: auto;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 400;
+    position: relative;
+
+    @include media-min-width-SM {
+      width: 47%;
+      margin-bottom: 0;
+    }
+
+    @include media-min-width-MD {}
+
+    &::before {
+      content: "Ремонтные услуги";
+      position: absolute;
+      top: -20px;
+      color: var(--color-text-secondary);
+    }
+
+    @include media-min-width-SM {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__cost {
+    margin: 0;
+    margin-bottom: 32px;
+    position: relative;
+
+    @include media-min-width-SM {
+      width: 15%;
+      margin-bottom: 0;
+      margin-left: auto;
+    }
+
+    @include media-min-width-MD {
+      width: 22%;
+      width: 15%;
+    }
+
+    &::before {
+      content: "Цена";
+      position: absolute;
+      top: -20px;
+      color: var(--color-text-secondary);
+    }
+
+    @include media-min-width-SM {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 12px;
+
+    @include media-min-width-SM {
+      width: 215px;
+    }
+
+    @include media-min-width-MD {
+      margin-left: auto;
+    }
+
+    @include media-min-width-LG {
+      width: 215px;
+    }
+  }
+
+  &__period {
+    margin: 0;
+    position: relative;
+    white-space: nowrap;
+
+    &::before {
+      content: "Срок";
+      position: absolute;
+      top: -20px;
+      color: var(--color-text-secondary);
+    }
+
+    @include media-min-width-SM {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__order-button {
+    padding: 4px 12px;
+    padding-right: 40px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-accent-primary);
+    background-image: url('./assets/svg/icon-arrow-button.svg');
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+    transition: background-color 900ms;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-secondary);
+      outline-offset: 2px;
+      transition: outline-offset 200ms;
+    }
+
+    @include media-hover {
+      background-color: rgb(255, 62, 121, 0.5);
+      transition: background-color 200ms;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+.prices__heading {
+  @include media-min-width-SM {
+    height: auto;
+    margin-bottom: 16px;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+
+    &:first-child {
+      background-color: transparent;
+      border-radius: 0;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__title {}
+
+  &__cost {}
+
+  &__period {}
+}
+
+.prices__heading.swiper-slide {
+  display: none;
+}
