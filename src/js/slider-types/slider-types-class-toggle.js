@@ -1,14 +1,17 @@
 // const sliderContainer = document.querySelector('.swiper')
-const sliderContainer = document.querySelector('.brands__slider')
+// const sliderContainer = document.querySelector('.brands__slider')
+const sliderContainer = document.querySelector('.types__slider')
 
 // const sliderWrapper = document.querySelector('.swiper-wrapper')
-const sliderWrapper = document.querySelector('.brands__wrapper')
+// const sliderWrapper = document.querySelector('.brands__wrapper')
+const sliderWrapper = document.querySelector('.types__wrapper')
 
 // const sliderSlides = document.querySelectorAll('.swiper-slide')
-const sliderSlides = document.querySelectorAll('.card-brand')
+// const sliderSlides = document.querySelectorAll('.card-brand')
+const sliderSlides = document.querySelectorAll('.card-type')
 
 // const sliderPagination = document.querySelector('.swiper-pagination')
-const sliderPagination = document.querySelector('.brands__slider-pagination')
+const sliderPagination = document.querySelector('.types__slider-pagination')
 
 
 export default {
