@@ -1,5 +1,6 @@
 .menu-main {
   min-width: 320px;
+  align-self: stretch;
   padding: 18px 24px 18px 0px;
   position: absolute;
   z-index: 20;
@@ -18,13 +19,12 @@
   }
 
   &__inner {
-    height: 100%;
+    height: 95vh;
     display: flex;
     flex-direction: column;
   }
 
   //////// header ////////////////////////////////////////
-
   &__header {
     margin-bottom: 35px;
     padding-left: 24px;
@@ -46,11 +46,8 @@
   }
 
   //////// navigation ////////////////////////////////////////
-
   &__navigation {
     margin-bottom: 35px;
-    // margin-left: 24px;
-    flex-grow: 1;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--color-accent-secondary) var(--color-white);
@@ -62,7 +59,15 @@
     row-gap: 26px;
   }
 
-  &__item {}
+  &__item {
+    &:first-child .menu-main__link {
+      padding: 0px 0px 10px 24px;
+    }
+
+    &:last-child .menu-main__link {
+      padding: 10px 0px 0px 24px;
+    }
+  }
 
   &__link {
     padding: 10px 0;
@@ -130,6 +135,7 @@
     }
   }
 
+  //////// footer ////////////////////////////////////////
   &__footer {
     margin-top: auto;
   }

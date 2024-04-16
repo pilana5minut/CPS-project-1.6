@@ -1,0 +1,42 @@
+.prices {
+  padding-bottom: 47px;
+
+  &__section-title {
+    @include media-min-width-SM {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__inner {}
+
+  &__slider {
+    margin-bottom: 16px;
+  }
+
+  &__wrapper {
+    @include media-min-width-SM {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__wrapper.swiper-wrapper {
+    align-items: stretch;
+  }
+
+  &__slider-pagination.swiper-pagination {
+    margin-bottom: 16px;
+    position: static;
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      margin: 0px 6px;
+      background-color: #dddddd;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: #B5B6BC;
+    }
+  }
+}
