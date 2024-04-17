@@ -760,6 +760,150 @@
 
   </main>
 
+  <!-- //////// modal modal-feedback //////////////////////////////////////////////////////////////// -->
+  <template id="modal-feedback">
+
+    <section class="modal modal-feedback modal--is-open">
+      <div class="modal__inner">
+
+        <header class="modal__header">
+          <div class="container">
+            <button
+              class='modal__circular-button circular-button modal__circular-button--close circular-button--close'
+              type='button'
+            >
+              <span class='visually-hidden'>Закрыть модальное окно</span>
+            </button>
+          </div>
+        </header>
+
+        <h3 class="modal__title">Обратная связь</h3>
+
+        <div class="modal__body">
+          <div class="container">
+
+            <form
+              class="modal__form"
+              action=""
+              method="get"
+            >
+
+              <input
+                class="modal__field modal__field--input"
+                type="text"
+                name="user-name"
+                id=""
+                placeholder="Имя"
+                required
+              >
+
+              <input
+                class="modal__field modal__field--input"
+                type="tel"
+                name="user-tel"
+                id=""
+                placeholder="Телефон"
+                required
+              >
+
+              <input
+                class="modal__field modal__field--input"
+                type="email"
+                name="user-email"
+                id=""
+                placeholder="Электронная почта"
+                required
+              >
+
+              <textarea
+                class="modal__field modal__field--textarea"
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Сообщение"
+                required
+              ></textarea>
+
+              <p class="modal-description">
+                Нажимая “отправить”, вы даете согласие на
+                <span class="modal-description__accent">обработку персональных данных</span>
+                и соглашаетесь с нашей
+                <span class="modal-description__accent"></span>политикой конфиденциальности</span>
+              </p>
+
+              <button
+                class="modal__button"
+                type="submit"
+              > Отправить </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </template>
+
+  <!-- //////// modal modal-callback //////////////////////////////////////////////////////////////// -->
+  <template id="modal-callback">
+
+    <section class="modal modal-callback modal--is-open">
+      <div class="modal__inner">
+
+        <header class="modal__header">
+          <div class="container">
+            <button
+              class='modal__circular-button circular-button modal__circular-button--close circular-button--close'
+              type='button'
+            >
+              <span class='visually-hidden'>Закрыть модальное окно</span>
+            </button>
+          </div>
+        </header>
+
+        <h3 class="modal__title">Заказать звонок</h3>
+
+        <div class="modal__body">
+          <div class="container">
+
+            <form
+              class="modal__form"
+              action=""
+              method="get"
+            >
+
+              <input
+                class="modal__field modal__field--input"
+                type="tel"
+                name="user-tel"
+                id=""
+                placeholder="Телефон"
+                required
+              >
+
+              <p class="modal-description">
+                Нажимая “отправить”, вы даете согласие на
+                <span class="modal-description__accent">обработку персональных данных</span>
+                и соглашаетесь с нашей
+                <span class="modal-description__accent"></span>политикой конфиденциальности</span>
+              </p>
+
+              <button
+                class="modal__button"
+                type="submit"
+              > Отправить </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </template>
+
   <span class="page__overlay"></span>
 </body>
 
