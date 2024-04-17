@@ -1,9 +1,6 @@
 import { slideCount } from './slider-brands.js'
 
-// const sliderWrapper = document.querySelector('.swiper-wrapper')
 const sliderWrapper = document.querySelector('.brands__wrapper')
-
-// const sliderSlides = document.querySelectorAll('.swiper-slide')
 const sliderSlides = document.querySelectorAll('.card-brand')
 
 const slidesStorage = []

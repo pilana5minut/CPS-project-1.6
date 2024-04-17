@@ -1,6 +1,4 @@
-// const sliderContainer = document.querySelector('.brands__slider')
 const sliderContainer = document.querySelector('.types__slider')
-// const showAllButton = document.querySelector('.brands__show-all-button')
 const showAllButton = document.querySelector('.types__show-all-button')
 
 import breakPoints from '../break-points.js'

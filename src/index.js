@@ -5,6 +5,7 @@ import './index.html'
 
 import './js/button-show-menu-main.js'
 import './js/button-show-hero-description.js'
+import './js/button-show-modal.js'
 
 import './js/slider-brands/slider-brands.js'
 import './js/slider-types/slider-types.js'
